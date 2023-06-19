@@ -11,11 +11,7 @@
     "react-redux": "^8.1.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
-<<<<<<< HEAD
-    "redux-action": "^1.2.2",
-=======
     "redux-actions": "^3.0.0",
->>>>>>> 2d04547144d9c141b439a7c03e0f25d4c50e3fe4
     "web-vitals": "^2.1.0"
   },
   "scripts": {
