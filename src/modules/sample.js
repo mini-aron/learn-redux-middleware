@@ -87,7 +87,7 @@ const sample = handleAction(
                 GET_POST: false //요청완료
             }
         }),
-        [GET_USERS]: state = ({
+        [GET_USERS]: state => ({
             ...state,
             loading: {
                 ...state.loading,
