@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import React from "react";
 import Sample from "../components/Sample";
 import { getPost, getUsers } from '../modules/sample';
 
@@ -25,3 +26,16 @@ const SampleContainer = ({
         />
     )
 }
+
+export default connect(
+    ({ sample }) => ({
+        post: sample.post,
+        users: sample.users,
+        loadingPost: sample.loading.GET_POST,
+        loadingUsers: sample.loading.GET_USERS
+    }),
+    {
+        getPost,
+        getUsers,
+    }
+)(SampleContainer);

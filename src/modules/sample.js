@@ -1,4 +1,4 @@
-import { handleAction } from "redux-actions";
+import { handleActions } from "redux-actions";
 import * as api from '../lib/api';
 
 //액션타입 선언
@@ -63,7 +63,7 @@ const initialState = {
     users: null,
 };
 
-const sample = handleAction(
+const sample = handleActions(
     {
         [GET_POST]: state => ({
             ...state,
